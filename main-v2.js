@@ -1,10 +1,10 @@
-var human3 = {
-    name: "Paul",
+var objectHuman = {
+    name: "John",
     age: 20,
-    gender: "Male",
-    status: "Alive"
+    location: "Jakarta",
+    motor: "Honda",
 };
-function cetakHuman3(human) {
-    console.log(human.name);
+function printHuman(human) {
+    console.log(human.location);
 }
-cetakHuman2(human2);
+printHuman(objectHuman);

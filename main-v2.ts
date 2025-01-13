@@ -1,11 +1,19 @@
-const human2 = {
-    name: "Paul",
+interface Human {
+    name: string;
+    age: number;
+    location: string;
+    motor: string;
+  }
+  
+  let objectHuman: Human = {
+    name: "John",
     age: 20,
-    gender: "Male",
-    status: "Alive"
-}
-function cetakHuman2(human){
-    console.log(human.name)
-}
-
-cetakHuman2(human2);
+    location: "Jakarta",
+    motor: "Honda",
+  };
+  
+  function printHuman(human: Human): void {
+    console.log(human.location);
+  }
+  
+  printHuman(objectHuman);
